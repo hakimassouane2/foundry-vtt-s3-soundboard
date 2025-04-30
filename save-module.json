@@ -1,7 +1,7 @@
 {
-  "id": "test-s3-module",
-  "title": "Test S3 Module",
-  "description": "",
+  "id": "foundry-vtt-s3-soundboard",
+  "title": "FoundryVTT S3 Soundboard",
+  "description": "Play music from an Amazon S3 bucket in FoundryVTT",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
@@ -21,9 +21,10 @@
     "systems": [],
     "requires": []
   },
-  "esmodules": ["scripts/module.js"],
+  "esmodules": ["scripts/s3-music-player.js"],
   "scripts": ["scripts/lib/lib.js"],
-  "styles": ["styles/module.css"],
+  "styles": ["styles/s3-music-player.css"],
+  "socket": true,
   "languages": [
     {
       "lang": "en",
