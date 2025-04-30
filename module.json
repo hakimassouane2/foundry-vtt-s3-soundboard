@@ -22,6 +22,7 @@
     "requires": []
   },
   "esmodules": ["scripts/s3-music-player.js"],
+  "scripts": ["scripts/lib/lib.js"],
   "styles": ["styles/s3-music-player.css"],
   "socket": true,
   "languages": [
