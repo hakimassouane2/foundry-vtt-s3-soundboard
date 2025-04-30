@@ -1,0 +1,62 @@
+<div class="browser-header">
+  <div class="breadcrumbs">
+    {{#each breadcrumbs}}
+    <div
+      class="breadcrumb-item"
+      data-path="{{this.path}}"
+      data-index="{{@index}}"
+    >
+      {{this.name}}
+    </div>
+    {{#unless @last}}
+    <span class="breadcrumb-separator">/</span>
+    {{/unless}} {{/each}}
+  </div>
+
+  <div class="search-box">
+    <input id="s3-search" type="text" placeholder="Search files..." />
+  </div>
+</div>
+
+<div class="file-list">
+  {{#each files}}
+  <div
+    class="file-list-item {{#if (eq this.type 'folder')}}folder-item{{else}}file-item{{/if}}"
+    data-path="{{this.path}}"
+    data-name="{{this.name}}"
+  >
+    <div class="file-icon">
+      {{#if (eq this.type 'folder')}}
+      <i class="fas fa-folder"></i>
+      {{else}}
+      <i class="fas fa-music"></i>
+      {{/if}}
+    </div>
+
+    <div class="file-name">{{this.name}}</div>
+
+    {{#if (eq this.type 'file')}}
+    <div class="file-actions">
+      <button
+        class="add-to-playlist"
+        data-path="{{this.path}}"
+        data-name="{{this.name}}"
+      >
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    {{/if}}
+  </div>
+  {{else}}
+  <div class="empty-folder">No files found</div>
+  {{/each}}
+</div>
+
+<div class="browser-footer">
+  <button
+    class="create-playlist-btn"
+    title="Create playlist from current folder"
+  >
+    <i class="fas fa-list"></i> Create Playlist from Folder
+  </button>
+</div>

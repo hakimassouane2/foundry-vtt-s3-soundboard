@@ -1,0 +1,87 @@
+.s3-music-browser .window-content {
+  padding: 0;
+}
+
+.s3-music-browser .browser-header {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.s3-music-browser .breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.s3-music-browser .breadcrumb-item {
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.s3-music-browser .breadcrumb-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.s3-music-browser .breadcrumb-separator {
+  margin: 0 5px;
+  color: #999;
+}
+
+.s3-music-browser .search-box {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.s3-music-browser .file-list {
+  padding: 10px;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.s3-music-browser .file-list-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.s3-music-browser .file-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.s3-music-browser .folder-item {
+  color: #635200;
+  background-color: rgba(255, 213, 0, 0.1);
+}
+
+.s3-music-browser .file-item {
+  color: #003d66;
+  background-color: rgba(0, 153, 255, 0.1);
+}
+
+.s3-music-browser .file-icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.s3-music-browser .file-name {
+  flex-grow: 1;
+}
+
+.s3-music-browser .file-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.s3-music-browser .browser-footer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: right;
+}

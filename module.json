@@ -1,35 +1,22 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "#{VERSION}#",
+  "id": "foundry-vtt-s3-soundboard",
+  "title": "FoundryVTT S3 Soundboard",
+  "description": "Play music from an Amazon S3 bucket in FoundryVTT",
+  "version": "1.0.0",
   "library": "false",
-  "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "minimum": 12,
+    "verified": 12,
+    "maximum": 12
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Hakim Assouane"
     }
   ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
+  "esmodules": ["scripts/s3-music-player.js"],
+  "styles": ["styles/s3-music-player.css"],
+  "socket": true,
   "languages": [
     {
       "lang": "en",
@@ -37,11 +24,9 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md",
+  "url": "https://github.com/hakimassouane2/foundry-vtt-s3-soundboard",
+  "manifest": "https://raw.githubusercontent.com/hakimassouane2/foundry-vtt-s3-soundboard/main/module.json",
+  "download": "https://github.com/hakimassouane2/foundry-vtt-s3-soundboard/archive/v1.0.0.zip",
   "media": [
     {
       "type": "icon",
