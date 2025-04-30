@@ -24,9 +24,9 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "https://github.com/hakimassouane2/foundry-vtt-s3-soundboard",
-  "manifest": "https://raw.githubusercontent.com/hakimassouane2/foundry-vtt-s3-soundboard/main/module.json",
-  "download": "https://github.com/hakimassouane2/foundry-vtt-s3-soundboard/archive/v1.0.0.zip",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
   "media": [
     {
       "type": "icon",
